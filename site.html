@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Online Presence -->
+    <meta name="description" content="Dr. Ernesto Filipe - Advocacia e Consultoria Jurídica em Benguela e Luanda. Especialista em Direito Imobiliário, Comercial e Familiar.">
+    <meta name="keywords" content="Advogado Angola, Ernesto Filipe, Direito Imobiliário Angola, Consultoria Jurídica, Advogado Benguela">
+    <meta name="author" content="Dr. Ernesto Filipe">
+    <meta property="og:title" content="Dr. Ernesto Filipe | Advogado & Consultor">
+    <meta property="og:description" content="Soluções jurídicas estratégicas em Angola. Especialista em regularização de terras.">
+    <meta property="og:type" content="website">
+    
+    <title>Dr. Ernesto Filipe | Advogado & Consultor</title>
+    
+    <!-- Bibliotecas de Estilo e Ícones -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            gold: '#B89150',
+                            accent: '#1E293B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .glass-nav { background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); }
+        .hero-pattern {
+            background-color: #0F172A;
+            background-image: radial-gradient(circle at 2px 2px, rgba(184, 145, 80, 0.15) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .panel-card:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegação com Menu Completo -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-brand-gold flex items-center justify-center rounded-lg shadow-lg">
+                    <i class="fas fa-balance-scale text-brand-navy text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-white text-lg leading-none tracking-tight">ERNESTO FILIPE</span>
+                    <span class="text-[10px] text-brand-gold font-bold tracking-widest uppercase">Advocacia & Consultoria</span>
+                </div>
+            </div>
+            
+            <!-- Menu de Links -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="text-white hover:text-brand-gold transition">Início</a>
+                <a href="#sobre" class="text-white hover:text-brand-gold transition">Sobre Nós</a>
+                <a href="#servicos" class="text-white hover:text-brand-gold transition">Serviços</a>
+                <a href="#faq" class="text-white hover:text-brand-gold transition">FAQ</a>
+                <a href="#localizacao" class="text-white hover:text-brand-gold transition">Localização</a>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="hidden lg:flex items-center gap-5">
+                <a href="https://facebook.com/ernesto.da.trindade.filipe" target="_blank" class="text-white hover:text-brand-gold transition text-lg" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/ernestofilipe" target="_blank" class="text-white hover:text-brand-gold transition text-lg" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ernestofilipe" target="_blank" class="text-white hover:text-brand-gold transition text-lg" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#contacto" class="bg-brand-gold text-brand-navy px-5 py-2 rounded-full font-bold hover:bg-white transition-all transform active:scale-95">
+                    Consultoria
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-32 pb-20 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center w-full">
+            <div class="reveal active">
+                <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/20 px-4 py-2 rounded-full mb-6">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-gold"></span>
+                    </span>
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest italic">Benguela & Luanda</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-8 leading-[1.1]">
+                    Defesa <span class="text-brand-gold italic">Estratégica</span> dos Seus Direitos.
+                </h1>
+                <p class="text-slate-400 text-lg mb-10 leading-relaxed max-w-xl">
+                    Rigor técnico e compromisso ético na resolução de conflitos complexos no mercado angolano. Soluções jurídicas para empresas e particulares.
+                </p>
+                <button onclick="document.getElementById('contacto').scrollIntoView()" class="bg-brand-gold text-brand-navy px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-brand-gold/20">
+                    Falar com o Dr. Ernesto
+                </button>
+            </div>
+            <div class="relative reveal active">
+                <div class="absolute -inset-2 bg-brand-gold/30 rounded-[2rem] blur-xl animate-pulse"></div>
+                <div class="relative rounded-3xl overflow-hidden border-4 border-brand-gold/50 shadow-2xl aspect-[4/5] bg-slate-800 group">
+                    <img src="casse12.jpeg" alt="Dr. Ernesto Filipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
+                        <p class="text-white font-bold text-lg">Dr. Ernesto Filipe</p>
+                        <p class="text-brand-gold text-xs uppercase tracking-tighter">Advogado Especialista</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção de Painéis Interativos -->
+    <section class="py-16 px-6 -mt-10 relative z-10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Painel 1 -->
+            <button onclick="document.getElementById('servicos').scrollIntoView()" class="panel-card bg-white p-8 rounded-2xl shadow-xl border-b-4 border-brand-gold transition-all duration-300 text-left group">
+                <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-gold transition-colors">
+                    <i class="fas fa-file-signature text-brand-gold group-hover:text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-navy text-lg mb-2">Legalização de Terras</h3>
+                <p class="text-slate-500 text-sm">Proteja o seu terreno com documentação oficial.</p>
+            </button>
+            <!-- Painel 2 -->
+            <button onclick="document.getElementById('servicos').scrollIntoView()" class="panel-card bg-white p-8 rounded-2xl shadow-xl border-b-4 border-brand-gold transition-all duration-300 text-left group">
+                <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-gold transition-colors">
+                    <i class="fas fa-handshake text-brand-gold group-hover:text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-navy text-lg mb-2">Consultoria Empresarial</h3>
+                <p class="text-slate-500 text-sm">Apoio jurídico para o crescimento do seu negócio.</p>
+            </button>
+            <!-- Painel 3 -->
+            <button onclick="document.getElementById('servicos').scrollIntoView()" class="panel-card bg-white p-8 rounded-2xl shadow-xl border-b-4 border-brand-gold transition-all duration-300 text-left group">
+                <div class="w-12 h-12 bg-slate-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-gold transition-colors">
+                    <i class="fas fa-gavel text-brand-gold group-hover:text-white text-xl"></i>
+                </div>
+                <h3 class="font-bold text-brand-navy text-lg mb-2">Resolução de Litígios</h3>
+                <p class="text-slate-500 text-sm">Mediação e defesa em processos judiciais complexos.</p>
+            </button>
+            <!-- Painel 4 -->
+            <button onclick="document.getElementById('contacto').scrollIntoView()" class="panel-card bg-brand-navy p-8 rounded-2xl shadow-xl border-b-4 border-brand-gold transition-all duration-300 text-left group">
+                <div class="w-12 h-12 bg-brand-gold/10 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-calendar-check text-brand-gold text-xl"></i>
+                </div>
+                <h3 class="font-bold text-white text-lg mb-2">Agendar Consulta</h3>
+                <p class="text-slate-400 text-sm">Fale diretamente com o Dr. Ernesto agora.</p>
+            </button>
+        </div>
+    </section>
+
+    <!-- Secção Sobre Nós -->
+    <section id="sobre" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h2 class="text-4xl font-extrabold text-brand-navy mb-4">Sobre Nós</h2>
+                <div class="w-16 h-1 bg-brand-gold mb-8"></div>
+                <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                    Liderado pelo Dr. Ernesto Filipe, o nosso escritório é referência em advocacia estratégica em Angola. Com foco na transparência e no rigor jurídico, oferecemos soluções personalizadas para garantir a segurança dos seus bens e direitos.
+                </p>
+                <p class="text-slate-600 mb-8 leading-relaxed">
+                    Atuamos com integridade em cada processo, protegendo o património de famílias e o crescimento de empresas, especialmente nas províncias de Benguela e Luanda.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border-l-4 border-brand-gold pl-4">
+                        <h4 class="font-bold text-brand-navy">Missão</h4>
+                        <p class="text-sm text-slate-500">Garantir justiça e segurança jurídica com excelência.</p>
+                    </div>
+                    <div class="border-l-4 border-brand-gold pl-4">
+                        <h4 class="font-bold text-brand-navy">Valores</h4>
+                        <p class="text-sm text-slate-500">Ética, Rigor Técnico e Compromisso com o Cliente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-inner reveal">
+                <i class="fas fa-quote-left text-brand-gold text-4xl mb-6 opacity-30"></i>
+                <p class="text-brand-navy text-2xl font-medium italic leading-relaxed">
+                    "A minha missão é garantir que cada cliente tenha a certeza de que o seu património e os seus direitos estão protegidos perante a lei angolana."
+                </p>
+                <p class="mt-8 font-bold text-brand-navy">— Dr. Ernesto Filipe</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-extrabold text-brand-navy mb-4">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm reveal">
+                    <i class="fas fa-city text-brand-gold text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Direito Imobiliário</h3>
+                    <p class="text-slate-600">Regularização de terras, escrituras e processos prediais.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm reveal">
+                    <i class="fas fa-briefcase text-brand-gold text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Direito Comercial</h3>
+                    <p class="text-slate-600">Assessoria jurídica corporativa e constituição de empresas.</p>
+                </div>
+                <div class="p-8 bg-white rounded-2xl border border-slate-100 shadow-sm reveal">
+                    <i class="fas fa-users-viewfinder text-brand-gold text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Família e Sucessões</h3>
+                    <p class="text-slate-600">Gestão de inventários, partilhas e planeamento familiar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-extrabold text-brand-navy mb-4">Perguntas Frequentes (FAQ)</h2>
+                <div class="w-20 h-1 bg-brand-gold mx-auto"></div>
+            </div>
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-xl overflow-hidden reveal">
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full p-5 text-left font-bold text-brand-navy bg-slate-50 flex justify-between items-center">
+                        Como funciona o processo de regularização de terras?
+                        <i class="fas fa-chevron-down text-brand-gold"></i>
+                    </button>
+                    <div class="hidden p-5 text-slate-600 border-t border-slate-200">
+                        O processo envolve a análise da documentação atual, demarcação técnica e o encaminhamento junto às administrações municipais e conservatórias para a obtenção do Direito de Superfície.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-xl overflow-hidden reveal">
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full p-5 text-left font-bold text-brand-navy bg-slate-50 flex justify-between items-center">
+                        Quais são os documentos necessários para uma consulta inicial?
+                        <i class="fas fa-chevron-down text-brand-gold"></i>
+                    </button>
+                    <div class="hidden p-5 text-slate-600 border-t border-slate-200">
+                        Depende do caso, mas geralmente o Bilhete de Identidade e qualquer documento relacionado ao conflito (contratos, recibos, certidões) são essenciais.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-xl overflow-hidden reveal">
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="w-full p-5 text-left font-bold text-brand-navy bg-slate-50 flex justify-between items-center">
+                        O escritório atende em outras províncias além de Benguela?
+                        <i class="fas fa-chevron-down text-brand-gold"></i>
+                    </button>
+                    <div class="hidden p-5 text-slate-600 border-t border-slate-200">
+                        Sim, prestamos consultoria e acompanhamento jurídico em Luanda e noutras províncias sob agendamento prévio.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geolocalização do Escritório em Benguela -->
+    <section id="localizacao" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-extrabold text-brand-navy mb-4">Localização do Escritório</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Estamos situados no centro estratégico de Benguela para melhor lhe atender.</p>
+                <div class="w-20 h-1 bg-brand-gold mx-auto mt-4"></div>
+            </div>
+            <div class="bg-white p-4 rounded-3xl shadow-2xl border border-slate-200 reveal">
+                <iframe 
+                    class="w-full h-[500px] rounded-2xl" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15448.618055663738!2d13.402283!3d-12.5786411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bb3f72166666667%3A0x6666666666666666!2sBenguela%2C%20Angola!5e0!3m2!1spt-PT!2sao!4v1715000000000" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <div class="mt-8 grid md:grid-cols-3 gap-8 p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-gold/10 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fas fa-map-marker-alt text-brand-gold"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Endereço</p>
+                            <p class="text-sm text-slate-500">Centro da Cidade, Benguela - Angola</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-gold/10 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fas fa-clock text-brand-gold"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Horário</p>
+                            <p class="text-sm text-slate-500">Segunda a Sexta: 08h - 17h</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-brand-gold/10 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fas fa-phone text-brand-gold"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-navy">Contacto</p>
+                            <p class="text-sm text-slate-500">+244 923 065 419</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-brand-navy rounded-3xl overflow-hidden grid lg:grid-cols-2 shadow-2xl reveal">
+                <div class="p-12 text-white">
+                    <h2 class="text-4xl font-bold mb-8">Agende uma Consulta</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-phone text-brand-gold"></i>
+                            <span>+244 923 065 419</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-brand-gold"></i>
+                            <span>ernestoflipelando@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-location-dot text-brand-gold"></i>
+                            <span>Benguela, Angola</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-12 bg-white">
+                    <form onsubmit="event.preventDefault(); window.location.href='https://wa.me/244923065419'" class="space-y-4">
+                        <input type="text" placeholder="Seu Nome" class="w-full p-4 bg-slate-100 rounded-xl outline-none border focus:border-brand-gold" required>
+                        <textarea placeholder="Como posso ajudar?" class="w-full p-4 bg-slate-100 rounded-xl outline-none border focus:border-brand-gold h-32" required></textarea>
+                        <button class="w-full bg-brand-navy text-white font-bold py-4 rounded-xl hover:bg-brand-gold transition shadow-lg text-lg">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy py-12 px-6 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://facebook.com/ernesto.da.trindade.filipe" target="_blank" class="text-slate-400 hover:text-brand-gold text-2xl transition"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/ernestofilipe" target="_blank" class="text-slate-400 hover:text-brand-gold text-2xl transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ernestofilipe" target="_blank" class="text-slate-400 hover:text-brand-gold text-2xl transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-slate-500 text-sm italic">© 2024 Dr. Ernesto Filipe. Todos os direitos reservados. Advocacia e Consultoria Jurídica.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/244923065419" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-2xl hover:scale-110 transition-all z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
